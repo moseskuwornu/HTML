@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo-classes & Pseudo-elements Demo</title>
+    <style>
+        /* Pseudo-classes */
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+        li:first-child {
+            font-weight: bold;
+        }
+        li:last-child {
+            font-style: italic;
+        }
+        input:focus {
+            border: 2px solid blue;
+        }
+        p:nth-child(2) {
+            background: #f0f0f0;
+        }
+
+        /* Pseudo-elements */
+        h1::after {
+            content: " 🌟";
+            color: gold;
+        }
+        p::first-line {
+            font-size: 1.2em;
+            color: green;
+        }
+        p::first-letter {
+            font-size: 2em;
+            color: orange;
+        }
+        .highlight::selection {
+            background: yellow;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-classes & Pseudo-elements Example</h1>
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">About</a> |
+        <a href="#">Contact</a>
+    </nav>
+    <ul>
+        <li>First item (first-child)</li>
+        <li>Middle item</li>
+        <li>Last item (last-child)</li>
+    </ul>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Focus me!">
+    </form>
+    <div>
+        <p>This is the first paragraph.</p>
+        <p class="highlight">This is the second paragraph. Try selecting this text!</p>
+        <p>This is the third paragraph.</p>
