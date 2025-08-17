@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Space Explorer</title>
+        <style>
+            body {
+                font-family: "Arial, sans-serif";
+                background-color: #ff0000;
+                color: #09ff00;
+            }
+            h1 {
+                color: #1100ff;
+            }
+            a {
+                color: #00ffdd;
+                text-decoration: none;
+            }
+            a:hover {
+                color: rgb(72, 255, 0);
+            }
+            ul > li {
+                font-weight: bold;
+            }
+            h1 + p {
+                background-color: orange;
+                padding: 10px;
+                border-radius: 5px;
+            }
+            ul li:hover {
+                color: pink;
+            }
+            ul li:nth-child(3) {
+                color: yellow;
+            }
+            p:not(:first-of-type) {
+                color: #00ffdd;
+            }
+            ul li:before {
+                content: "🚀 ";
+            }
+            a::after {
+                content: "🔗 ";
+            }
+            p::first-letter {
+                content: " [external link]";
+                font-size: 200%;
+                color: #00ffdd;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Welcome to Space Explorer</h1>
+       <ul>
+           <li>Discover new planets</li>
+           <li>Learn about space missions</li>
+           <li>Join the astronaut training program</li>
+       </ul>
+       <p>Space exploration has always captivated human imagination. It's a journey to the unknown!</p>
+       <p>From the Moon to distant galaxies, we continue to explore the vastness of space</p>
+       <a href="https://www.nasa.gov/">Learn more about NASA</a><br>
+       <a href="https://www.esa.int/">Learn more about ESA</a><br>
+       <a href="https://www.jaxa.jp/">Learn more about JAXA</a><br>
+    </body>
+</html>
