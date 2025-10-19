@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>Demonstrating Error Handling in JavaScript</p>
+        <p id="error_message"></p>
+        <script>
+            try {
+                // Intentionally cause an error by calling an undefined function
+                addalert("Welecome guest!");
+            } catch (err) {
+                document.getElementById("error_message").innerHTML = 
+                     err.message;
+            }
+            </script>
+    </body>
+</html>
